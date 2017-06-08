@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>servlets.MainServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>servlets.Delete</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/Delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Insert</servlet-name>
+        <servlet-class>servlets.Insert</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Insert</servlet-name>
+        <url-pattern>/Insert</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Update</servlet-name>
+        <servlet-class>servlets.Update</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Update</servlet-name>
+        <url-pattern>/Update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Select</servlet-name>
+        <servlet-class>servlets.Select</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Select</servlet-name>
+        <url-pattern>/Select</url-pattern>
+    </servlet-mapping>
+
+</web-app>
